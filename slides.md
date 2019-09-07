@@ -1,14 +1,26 @@
-class: center, middle
+class: title
 
-# 10x Faster Dev/Verification
+# The Survival Guide of Building Huge App
 
-### CJ Lin
+10x Faster Dev/Verification Cycle
+
+CJ Lin
 
 ---
 
-### About me
+## Let's do a little survey...
+--
 
+### Can't tolerate LONG BUILD TME?
+--
 
+### Let's solve it !!!
+
+---
+
+## About me
+
+.left-column-80[
 ```swift
 struct Profile {
 
@@ -26,9 +38,24 @@ struct Profile {
 
 }
 ```
+]
 
+.right-column-20[
 <img src="assets/images/cj.png" width="150"/>
+]
+
+???
+
+List of App
 
 ---
 
-### Let's do a little Survey
+## My daily experience...
+
+---
+
+## Build and Run no more!
+
+.vertical-center.center[
+# Thank you
+]

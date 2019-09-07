@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Awesome Presentation</title>
+    <title>iPlayground2019</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-store"/>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <link rel="stylesheet" type="text/css" href="theme.css"/>
     <style type="text/css">
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-      body { font-family: 'Arial'; }
-      h1, h2, h3 {
-        font-family: 'Helvetica';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      /* Two-column layout */
+      .left-column  { width: 50%; float: left; }
+      .right-column { width: 50%; float: right; }
+
+      .left-column-80  { width: 80%; float: left; }
+      .right-column-20 { width: 20%; float: right; }
     </style>
   </head>
   <body>
@@ -23,10 +26,12 @@
       // https://github.com/gnab/remark/wiki
       // https://gist.github.com/willurd/5720255
       //
-      // e.g.
+      // ex:
       // python -m SimpleHTTPServer 8000
-      // http://localhost:8000
+      // ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => Dir.pwd).start'
+      // open: http://localhost:8000
       var slideshow = remark.create({
+        highlightStyle: 'monokai-sublime',
         sourceUrl: "slides.md"
       });
     </script>

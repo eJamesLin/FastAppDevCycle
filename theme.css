@@ -1,0 +1,108 @@
+/* fork from: https://github.com/sfc-arch/remark-theme/blob/gh-pages/blue_standard/remark_theme_blue_standard.css*/
+@charset "UTF-8";
+body{font-family:'Helvetica Neue Light','Helvetica Light','ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif}
+.remark-slide-content ul>li{list-style:none;position:relative;margin:.4em 0}
+.remark-slide-content ul>li::before{content:"＊";position:absolute;left:-1.3em;color:#c0392b}
+.remark-slide-content ul>li>ul>li::before{content:"";display:none}
+.remark-slide-content ul>li>ul>li{list-style-type:circle}
+.remark-slide-content ol>li{margin:.4em 0}
+.remark-slide-content a{color:#000}
+.remark-slide-content a:hover{color:#888}
+.remark-slide-content .remark-code,.remark-slide-content .remark-inline-code{font-family:monospace}
+.remark-slide-content .remark-code{padding:1em!important;border-radius:10px;background-color:black!important;word-wrap:break-word}
+.remark-slide-content .vertical-center{display:table;table-layout:fixed;height:85%;width:100%}
+.remark-slide-content .vertical-center::after,.remark-slide-content .vertical-center::before{display:table-row;content:''}
+.remark-slide-content .vertical-center>*{display:table-cell;height:auto;vertical-align:middle}
+.remark-slide-content.blank .vertical-center{height:100%}
+.remark-slide-content .bold{font-weight:700}
+.remark-slide-content .quote{font-family:serif;font-style:italic}
+.remark-slide-content .quote::before{content:open-quote}
+.remark-slide-content .quote::after{content:close-quote}
+.remark-slide-content .arrow-down::after,.remark-slide-content .arrow-left::after,.remark-slide-content .arrow-right::after,.remark-slide-content .arrow-up::after{content:"";background-color:#27ae60}
+.remark-slide-content .footnote{color:#888;font-size:.7em}
+.remark-slide-content .horizontal{display:table;width:100%}
+.remark-slide-content .horizontal>*{display:table-cell;vertical-align:middle;padding:1em}
+.remark-slide-content .small img{max-height:10em;min-height:10em}
+.remark-slide-content .middle img{max-height:15em;min-height:15em}
+.remark-slide-content .large img{max-height:20em;min-height:20em}
+.remark-slide-content .font-tiny{font-size:.5em}
+.remark-slide-content .image-tiny img{max-height:5em;min-height:5em}
+.remark-slide-content .font-small{font-size:.7em}
+.remark-slide-content .image-small img{max-height:10em;min-height:10em}
+.remark-slide-content .font-middle{font-size:1em}
+.remark-slide-content .image-middle img{max-height:15em;min-height:15em}
+.remark-slide-content .font-large{font-size:1.3em}
+.remark-slide-content .image-large img{max-height:20em;min-height:20em}
+.remark-slide-content .image-width-max img{max-width:100%;min-width:100%}
+.remark-slide-content .margin-top-tiny{margin-top:.5em}
+.remark-slide-content .padding-top-tiny{padding-top:.5em}
+.remark-slide-content .margin-top-small{margin-top:1em}
+.remark-slide-content .padding-top-small{padding-top:1em}
+.remark-slide-content .margin-top-middle{margin-top:2em}
+.remark-slide-content .padding-top-middle{padding-top:2em}
+.remark-slide-content .margin-top-large{margin-top:4em}
+.remark-slide-content .padding-top-large{padding-top:4em}
+.remark-slide-content .fixed-top{position:fixed;top:0}
+.remark-slide-content .margin-left-tiny{margin-left:.5em}
+.remark-slide-content .padding-left-tiny{padding-left:.5em}
+.remark-slide-content .margin-left-small{margin-left:1em}
+.remark-slide-content .padding-left-small{padding-left:1em}
+.remark-slide-content .margin-left-middle{margin-left:2em}
+.remark-slide-content .padding-left-middle{padding-left:2em}
+.remark-slide-content .margin-left-large{margin-left:4em}
+.remark-slide-content .padding-left-large{padding-left:4em}
+.remark-slide-content .fixed-left{position:fixed;left:0}
+.remark-slide-content .margin-bottom-tiny{margin-bottom:.5em}
+.remark-slide-content .padding-bottom-tiny{padding-bottom:.5em}
+.remark-slide-content .margin-bottom-small{margin-bottom:1em}
+.remark-slide-content .padding-bottom-small{padding-bottom:1em}
+.remark-slide-content .margin-bottom-middle{margin-bottom:2em}
+.remark-slide-content .padding-bottom-middle{padding-bottom:2em}
+.remark-slide-content .margin-bottom-large{margin-bottom:4em}
+.remark-slide-content .padding-bottom-large{padding-bottom:4em}
+.remark-slide-content .fixed-bottom{position:fixed;bottom:0}
+.remark-slide-content .margin-right-tiny{margin-right:.5em}
+.remark-slide-content .padding-right-tiny{padding-right:.5em}
+.remark-slide-content .margin-right-small{margin-right:1em}
+.remark-slide-content .padding-right-small{padding-right:1em}
+.remark-slide-content .margin-right-middle{margin-right:2em}
+.remark-slide-content .padding-right-middle{padding-right:2em}
+.remark-slide-content .margin-right-large{margin-right:4em}
+.remark-slide-content .padding-right-large{padding-right:4em}
+.remark-slide-content .fixed-right{position:fixed;right:0}
+.remark-slide-content .arrow-up{display:block;position:relative;width:0;height:0;left:24px;border:24px solid transparent;border-bottom-color:#27ae60}
+.remark-slide-content .arrow-up::after{position:absolute;top:23px;left:-12px;width:24px;height:24px}
+.remark-slide-content .arrow-down{display:block;position:relative;width:0;height:0;left:24px;border:24px solid transparent;border-top-color:#27ae60}
+.remark-slide-content .arrow-down::after{position:absolute;top:-47px;left:-12px;width:24px;height:24px}
+.remark-slide-content .arrow-right{display:block;position:relative;width:0;height:0;left:24px;border:24px solid transparent;border-left-color:#27ae60}
+.remark-slide-content .arrow-right::after{position:absolute;top:-12px;left:-47px;width:24px;height:24px}
+.remark-slide-content .arrow-left{display:block;position:relative;width:0;height:0;left:24px;border:24px solid transparent;border-right-color:#27ae60}
+.remark-slide-content .arrow-left::after{position:absolute;top:-12px;left:24px;width:24px;height:24px}
+.remark-slide-content{font-size:1.5em;padding:.5em 2em;background-size:cover!important;background-position:center!important}
+/*.remark-slide-content .remark-slide-number{font-size:.8em;bottom:.1em;right:.5em}*/
+.remark-slide-content.inverted,.remark-slide-content.inverted a{color:#fff}
+.remark-slide-content h2{font-size:1.7em}
+.remark-slide-content h1,.remark-slide-content h2,.remark-slide-content h3{font-weight:400}
+.remark-slide-content h3,.remark-slide-content h4,.remark-slide-content h5,.remark-slide-content p{margin:.5em 0}
+.remark-slide-content h4{padding:.5em 1em;color:#fff;font-size:1.25em;font-weight:400;background-color:#2ecc71;border-radius:10px}
+.remark-slide-content .inverted h4{background-color:transparent;border:3px solid #27ae60;color:#27ae60}
+.remark-slide-content .inverted h4 a{color:#27ae60}
+.remark-slide-content table{width:100%;margin:1em 0;border-collapse:separate;border-spacing:3px}
+.remark-slide-content table th{padding:.7em;background-color:#7f8c8d;color:#fff;font-weight:400}
+.remark-slide-content table th:first-child{border-radius:10px 0 0}
+.remark-slide-content table th:last-child{border-radius:0 10px 0 0}
+.remark-slide-content table td{padding:.7em;background-color:#ced4d8}
+.remark-slide-content table tr:last-child td:first-child{border-radius:0 0 0 10px}
+.remark-slide-content table tr:last-child td:last-child{border-radius:0 0 10px}
+.remark-slide-content .inverted table td,.remark-slide-content .inverted table th{background-color:transparent;border:2px solid #ced4d8}
+.remark-slide-content .inverted table{border-spacing:0}
+.remark-slide-content .inverted table th{color:#000;font-weight:700}
+.remark-slide-content.title{padding:0 2em;text-align:center}
+.remark-slide-content.title::before{content:'';position:absolute;top:auto;bottom:0;left:0;width:100%;height:35%;background-color:#2980b9}
+.remark-slide-content.title h1{font-size:2.5em;height:65%;padding-top:23%;margin:0 0 .7em}
+.remark-slide-content.title p{position:relative;z-index:1;color:#fff}
+.remark-slide-content.title a{color:#fff}
+.remark-slide-content.title a:hover{color:#888}
+/*.remark-slide-content.title .remark-slide-number{color:#fff}*/
+.remark-slide-content:not(.title):not(.blank)::before{content:'';position:absolute;left:0;top:0;width:100%;height:4.5em;margin:0;padding:0;background-color:#2980b9}
+.remark-slide-content:not(.title):not(.blank) h2{color:#fff;position:relative;z-index:1;margin:0;padding:.25em 0 .6em 0em}
