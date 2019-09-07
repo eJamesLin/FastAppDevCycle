@@ -79,7 +79,7 @@ body{font-family:'Helvetica Neue Light','Helvetica Light','ヒラギノ角ゴ Pr
 .remark-slide-content .arrow-left{display:block;position:relative;width:0;height:0;left:24px;border:24px solid transparent;border-right-color:#27ae60}
 .remark-slide-content .arrow-left::after{position:absolute;top:-12px;left:24px;width:24px;height:24px}
 .remark-slide-content{font-size:1.5em;padding:.5em 2em;background-size:cover!important;background-position:center!important}
-/*.remark-slide-content .remark-slide-number{font-size:.8em;bottom:.1em;right:.5em}*/
+.remark-slide-content .remark-slide-number{font-size:.8em;bottom:.1em;right:.5em}
 .remark-slide-content.inverted,.remark-slide-content.inverted a{color:#fff}
 .remark-slide-content h2{font-size:1.7em}
 .remark-slide-content h1,.remark-slide-content h2,.remark-slide-content h3{font-weight:400}
@@ -98,11 +98,11 @@ body{font-family:'Helvetica Neue Light','Helvetica Light','ヒラギノ角ゴ Pr
 .remark-slide-content .inverted table{border-spacing:0}
 .remark-slide-content .inverted table th{color:#000;font-weight:700}
 .remark-slide-content.title{padding:0 2em;text-align:center}
-.remark-slide-content.title::before{content:'';position:absolute;top:auto;bottom:0;left:0;width:100%;height:35%;background-color:#2980b9}
+.remark-slide-content.title::before{content:'';position:absolute;top:auto;bottom:0;left:0;width:100%;height:35%;background-color:black}
 .remark-slide-content.title h1{font-size:2.5em;height:65%;padding-top:23%;margin:0 0 .7em}
 .remark-slide-content.title p{position:relative;z-index:1;color:#fff}
 .remark-slide-content.title a{color:#fff}
 .remark-slide-content.title a:hover{color:#888}
-/*.remark-slide-content.title .remark-slide-number{color:#fff}*/
-.remark-slide-content:not(.title):not(.blank)::before{content:'';position:absolute;left:0;top:0;width:100%;height:4.5em;margin:0;padding:0;background-color:#2980b9}
+.remark-slide-content.title .remark-slide-number{color:#fff}
+.remark-slide-content:not(.title):not(.blank)::before{content:'';position:absolute;left:0;top:0;width:100%;height:4.5em;margin:0;padding:0;background-color:black}
 .remark-slide-content:not(.title):not(.blank) h2{color:#fff;position:relative;z-index:1;margin:0;padding:.25em 0 .6em 0em}
