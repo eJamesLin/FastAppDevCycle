@@ -26,7 +26,7 @@ struct Profile {
 
     let name = "CJ Lin"
 
-    var identity = "iOS Developer"
+    var identity = "iOS Nerd"
 
     var company = "LINE"
 
