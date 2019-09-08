@@ -54,6 +54,28 @@ List of App
 
 ---
 
+## Outline
+
+### Framework + Playground
+
+### LLDB
+
+---
+
+## Why Framework
+
+### Typical architecture
+
+---
+
+## Coordinator / Router
+
+---
+
+## Dependency Injection
+
+---
+
 ## Build and Run no more!
 
 .vertical-center.center[
