@@ -62,9 +62,27 @@ List of App
 
 ---
 
-## Why Framework
+## Partitioning is Hard
 
-### Typical architecture
+.center[
+	<img src="assets/images/SimpleArchitecture.jpg" width="800"/>
+]
+
+---
+
+## Partitioning is Hard
+
+.center[
+	<img src="assets/images/IdealPartitionedArchitecture.jpg" width="800"/>
+]
+
+---
+
+## Partitioning is Hard
+
+.center[
+	<img src="assets/images/RealArchitecture.jpg" width="800"/>
+]
 
 ---
 
