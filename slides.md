@@ -88,7 +88,7 @@ Add image here
 ]
 
 .right-column[
-### Interactable
+* Interactable
 ]
 
 ---
@@ -118,7 +118,8 @@ Add image here
 ]
 
 .right-column[
-### View change on the fly
+* View change on the fly
+
 <img src="assets/images/RunStep1.png" width="450"/>
 ]
 --
@@ -130,6 +131,25 @@ Add image here
 ???
 
 Similar to Scripting Language
+
+---
+
+## Playground Advantage
+
+.left-column[
+.font-large.grey[Live View]
+
+.font-large.grey[Inline Display]
+
+.font-large[Run Step by Step]
+]
+
+.right-column[
+* View change on the fly
+]
+.right-column[
+* Perfect for network response decoding trial
+]
 
 ---
 
@@ -168,7 +188,7 @@ viewController.preferredContentSize = Some Size...
 ]
 
 .right-column[
-### Use `NSLocalizedString` with language sub-bundle which specified
+* Use `NSLocalizedString` with language sub-bundle which specified
 ]
 
 ---
@@ -190,8 +210,46 @@ viewController.preferredContentSize = Some Size...
 ]
 
 .right-column[
-### Render the page directly, without the need to `Select A`, then `Scroll`, and then `Click B` in order to access some page
+* Render the page directly
 ]
+--
+.right-column[
+* No need to `Select A`, then `Scroll`, and then `Click B` in order to access some page
+]
+
+---
+
+## Custom framework in playground
+
+* Objetive-C framework supported
+	* Add bridging header
+--
+
+* CocoaPods/Carthage supported
+
+???
+
+Add more detail if still have time
+
+---
+
+## Custom framework in playground
+
+1. Add the playground into the workspace
+--
+
+2. `import` or `@testable import` the framework
+	with Testability enabled in settings
+--
+
+3. Build the framework
+--
+
+4. Start playgrounding
+--
+
+
+.footnote[[Apple Document](https://help.apple.com/xcode/mac/9.0/#/devc9b33111c)]
 
 ---
 
@@ -238,6 +296,14 @@ viewController.preferredContentSize = Some Size...
 ---
 
 ## Dependency Injection
+
+---
+
+## References
+
+* https://help.apple.com/xcode/mac/9.0/#/devc9b33111c
+
+* https://medium.com/flawless-app-stories/playground-driven-development-in-swift-cf167489fe7b
 
 ---
 
