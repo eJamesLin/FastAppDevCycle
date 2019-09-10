@@ -50,13 +50,113 @@ List of App
 
 ---
 
-## My daily experience...
+## Build whole APP is slow, but Partition?
+--
+
+### Whole APP
+
+.center[
+	<img src="assets/images/WholeAppBuildTime.png" width="400"/>
+]
+
+???
+
+Build time quickly disappear for indexing after build at Xcode title bar...
+
+--
+
+### A partition
+
+???
+
+Add image here
+
+---
+
+## Framework + Playground
+
+.center[
+	<img src="assets/images/TodayPlayground.gif" width="800"/>
+]
+
+---
+
+## Playground Advantage
+
+.left-column[
+.font-large[Live View]
+]
+
+---
+
+## Playground Advantage
+
+.left-column[
+.font-large.grey[Live View]
+
+.font-large[Inline Display]
+]
+
+.right-column[
+	<img src="assets/images/InlineDisplay.png" width="500"/>
+]
+
+---
+
+## Playground Advantage
+
+.left-column[
+.font-large.grey[Live View]
+
+.font-large.grey[Inline Display]
+
+.font-large[Run Step by Step]
+]
+
+.right-column[
+	<img src="assets/images/RunStep1.png" width="500"/>
+]
+--
+
+.right-column[
+	<img src="assets/images/RunStep2.png" width="500"/>
+]
+
+???
+
+Similar to Scripting Language
+
+---
+
+## Playground Advantage
+
+.left-column[
+.font-large.grey[Live View]
+
+.font-large.grey[Inline Display]
+
+.font-large.grey[Run Step by Step]
+
+.font-large[Vary Screen Size]
+]
+
+.right-column[
+```swift
+viewController.preferredContentSize = Some Size...
+```
+]
 
 ---
 
 ## Outline
 
 ### Framework + Playground
+
+### Playground Advantage
+
+### Playground Tips
+
+### Framework Tips
 
 ### LLDB
 
