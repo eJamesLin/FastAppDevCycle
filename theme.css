@@ -389,3 +389,10 @@ body {
     max-height: 20em;
     min-height: 20em;
 }
+
+/*
+ * Customize
+ */
+.remark-slide-content .grey {
+	color: grey;
+}
