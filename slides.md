@@ -148,6 +148,26 @@ viewController.preferredContentSize = Some Size...
 
 ---
 
+## Playground Advantage
+
+.left-column[
+.font-large.grey[Live View]
+
+.font-large.grey[Inline Display]
+
+.font-large.grey[Run Step by Step]
+
+.font-large.grey[Vary Screen Size]
+
+.font-large[Vary Language]
+]
+
+.right-column[
+### Use `NSLocalizedString` with language sub-bundle which specified
+]
+
+---
+
 ## Outline
 
 ### Framework + Playground
