@@ -87,6 +87,10 @@ Add image here
 .font-large[Live View]
 ]
 
+.right-column[
+### Interactable
+]
+
 ---
 
 ## Playground Advantage
@@ -114,12 +118,13 @@ Add image here
 ]
 
 .right-column[
-	<img src="assets/images/RunStep1.png" width="500"/>
+### View change on the fly
+<img src="assets/images/RunStep1.png" width="450"/>
 ]
 --
 
 .right-column[
-	<img src="assets/images/RunStep2.png" width="500"/>
+<img src="assets/images/RunStep2.png" width="450"/>
 ]
 
 ???
@@ -164,6 +169,28 @@ viewController.preferredContentSize = Some Size...
 
 .right-column[
 ### Use `NSLocalizedString` with language sub-bundle which specified
+]
+
+---
+
+## Playground Advantage
+
+.left-column[
+.font-large.grey[Live View]
+
+.font-large.grey[Inline Display]
+
+.font-large.grey[Run Step by Step]
+
+.font-large.grey[Vary Screen Size]
+
+.font-large.grey[Vary Language]
+
+.font-large[Fast Access]
+]
+
+.right-column[
+### Render the page directly, without the need to `Select A`, then `Scroll`, and then `Click B` in order to access some page
 ]
 
 ---
