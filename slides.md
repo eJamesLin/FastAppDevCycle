@@ -293,6 +293,74 @@ Add more detail if still have time
 
 ## Coordinator / Router
 
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator1.png" width="600"/>
+]
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator2.png" width="600"/>
+]
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator3.png" width="600"/>
+]
+
 ---
 
 ## Dependency Injection
