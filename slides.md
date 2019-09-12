@@ -261,13 +261,13 @@ Add more detail if still have time
 
 ### Playground Tips
 
-### Framework Tips
+### Framework Partitioning Tips
 
 ### LLDB
 
 ---
 
-## Partitioning is Hard
+## Framework Partitioning Tips
 
 .center[
 	<img src="assets/images/SimpleArchitecture.jpg" width="800"/>
@@ -275,7 +275,7 @@ Add more detail if still have time
 
 ---
 
-## Partitioning is Hard
+## Framework Partitioning Tips
 
 .center[
 	<img src="assets/images/IdealPartitionedArchitecture.jpg" width="800"/>
@@ -283,7 +283,7 @@ Add more detail if still have time
 
 ---
 
-## Partitioning is Hard
+## Framework Partitioning Tips
 
 .center[
 	<img src="assets/images/RealArchitecture.jpg" width="800"/>
@@ -291,6 +291,28 @@ Add more detail if still have time
 
 ---
 
+## Framework Partitioning Tips
+
+### Coordinator / Router
+
+### Dependency Injection
+
+---
+
+## Coordinator / Router
+
+### How `Coordinator` eliminate dependency?
+
+* Example
+	* In `Profile`, click `Edit` button, and show `EditProfile`
+--
+
+* If show `EditProfile` directly in `Profile` class
+	* `Profile` is depends on `EditProfile`
+	* Difficult to move into framework
+
+---
+
 ## Coordinator / Router
 
 ```swift
@@ -299,7 +321,9 @@ class Coordinator: ProfileViewControllerDelegate {
 		// show EditProfileViewController...
 	}
 }
+```
 
+```swift
 protocol ProfileViewControllerDelegate: class {
 	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
 }
@@ -310,7 +334,7 @@ class ProfileViewController: UIViewController {
 ```
 
 .center[
-<img src="assets/images/Coordinator1.png" width="600"/>
+<img src="assets/images/Coordinator1.png" width="500"/>
 ]
 
 ---
@@ -323,7 +347,9 @@ class Coordinator: ProfileViewControllerDelegate {
 		// show EditProfileViewController...
 	}
 }
+```
 
+```swift
 protocol ProfileViewControllerDelegate: class {
 	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
 }
@@ -334,7 +360,7 @@ class ProfileViewController: UIViewController {
 ```
 
 .center[
-<img src="assets/images/Coordinator2.png" width="600"/>
+<img src="assets/images/Coordinator2.png" width="500"/>
 ]
 
 ---
@@ -347,7 +373,9 @@ class Coordinator: ProfileViewControllerDelegate {
 		// show EditProfileViewController...
 	}
 }
+```
 
+```swift
 protocol ProfileViewControllerDelegate: class {
 	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
 }
@@ -358,7 +386,7 @@ class ProfileViewController: UIViewController {
 ```
 
 .center[
-<img src="assets/images/Coordinator3.png" width="600"/>
+<img src="assets/images/Coordinator3.png" width="500"/>
 ]
 
 ---
