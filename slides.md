@@ -253,6 +253,18 @@ Add more detail if still have time
 
 ---
 
+## Playground Driven Development
+
+* From Kickstarter [Open Source](https://github.com/kickstarter/ios-oss) and [Speech](https://www.youtube.com/watch?v=DrdxSNG-_DE)
+* All code in Framework
+* Every page inspectable in playground
+
+.center[
+	<img src="assets/images/kickstarter.jpg" width="800"/>
+]
+
+---
+
 ## Outline
 
 ### Framework + Playground
