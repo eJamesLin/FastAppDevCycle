@@ -188,7 +188,7 @@ viewController.preferredContentSize = Some Size...
 ]
 
 .right-column[
-* Use `NSLocalizedString` with language sub-bundle which specified
+* Use `NSLocalizedString` with specified language sub-bundle
 ]
 
 ---
@@ -214,7 +214,7 @@ viewController.preferredContentSize = Some Size...
 ]
 --
 .right-column[
-* No need to `Select A`, then `Scroll`, and then `Click B` in order to access some page
+* No more `Select A`, then `Scroll`, and then `Click B` in order to access some page
 ]
 
 ---
