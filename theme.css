@@ -296,22 +296,18 @@ body {
  * Listing style
  */
 .remark-slide-content ul>li {
-    list-style: none;
+    list-style: disc;
     position: relative;
     margin: 0.4em 0;
-}
-.remark-slide-content ul>li::before {
-    content: "＊";
-    position: absolute;
-    left: -1.3em;
-    color: #c0392b;
+    font-size: 1.4em;
 }
 .remark-slide-content ul>li>ul>li::before {
     content: "";
     display: none;
 }
 .remark-slide-content ul>li>ul>li {
-    list-style-type: disc;
+    list-style-type: circle;
+    font-size: 0.95em;
 }
 .remark-slide-content ul>li>ul>li>ul>li {
     list-style-type: circle;
