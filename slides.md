@@ -73,6 +73,152 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 
 ---
 
+## Framework Partitioning Tips
+
+.center[
+	<img src="assets/images/SimpleArchitecture.jpg" width="800"/>
+]
+
+---
+
+## Framework Partitioning Tips
+
+.center[
+	<img src="assets/images/IdealPartitionedArchitecture.jpg" width="800"/>
+]
+
+---
+
+## Framework Partitioning Tips
+
+.center[
+	<img src="assets/images/RealArchitecture.jpg" width="800"/>
+]
+
+---
+
+class: blank
+
+.vertical-center.center[
+## Small Debug-only Framework
+]
+
+---
+
+## Small dummy Framework
+
+### Not embedded by other target
+
+---
+
+### Not linked by other target
+
+---
+
+## Framework Partitioning Tips
+
+### Coordinator / Router
+
+### Dependency Injection
+
+---
+
+## Coordinator / Router
+
+### How `Coordinator` eliminate dependency?
+
+* Example
+	* In `Profile`, click `Edit` button, and show `EditProfile`
+--
+
+* If show `EditProfile` directly in `Profile` class
+	* `Profile` is depends on `EditProfile`
+	* Difficult to move into framework
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+```
+
+```swift
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator1.png" width="500"/>
+]
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+```
+
+```swift
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator2.png" width="500"/>
+]
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+```
+
+```swift
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator3.png" width="500"/>
+]
+
+---
+
+## Dependency Injection
+
+---
+
 ## Framework + Playground
 
 .center[
@@ -188,7 +334,7 @@ viewController.preferredContentSize = Some Size...
 ]
 
 .right-column[
-* Use `NSLocalizedString` with language sub-bundle which specified
+* Use `NSLocalizedString` with specified language sub-bundle
 ]
 
 ---
@@ -214,7 +360,7 @@ viewController.preferredContentSize = Some Size...
 ]
 --
 .right-column[
-* No need to `Select A`, then `Scroll`, and then `Click B` in order to access some page
+* No more `Select A`, then `Scroll`, and then `Click B` in order to access some page
 ]
 
 ---
@@ -253,6 +399,18 @@ Add more detail if still have time
 
 ---
 
+## Playground Driven Development
+
+* From Kickstarter [Open Source](https://github.com/kickstarter/ios-oss) and [Speech](https://www.youtube.com/watch?v=DrdxSNG-_DE)
+* All code in Framework
+* Every page inspectable in playground
+
+.center[
+	<img src="assets/images/kickstarter.jpg" width="800"/>
+]
+
+---
+
 ## Outline
 
 ### Framework + Playground
@@ -261,41 +419,9 @@ Add more detail if still have time
 
 ### Playground Tips
 
-### Framework Tips
+### Framework Partitioning Tips
 
 ### LLDB
-
----
-
-## Partitioning is Hard
-
-.center[
-	<img src="assets/images/SimpleArchitecture.jpg" width="800"/>
-]
-
----
-
-## Partitioning is Hard
-
-.center[
-	<img src="assets/images/IdealPartitionedArchitecture.jpg" width="800"/>
-]
-
----
-
-## Partitioning is Hard
-
-.center[
-	<img src="assets/images/RealArchitecture.jpg" width="800"/>
-]
-
----
-
-## Coordinator / Router
-
----
-
-## Dependency Injection
 
 ---
 
