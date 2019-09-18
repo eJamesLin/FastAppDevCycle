@@ -386,24 +386,8 @@ struct PreviewSwiftUIText: PreviewProvider {
 ```
 ]
 
----
-
-## SwiftUI Canvas Preview Advantage
-
 .left-column[
-.font-large.grey[Live Preview]
-
-.font-large.grey[Fast Access]
-
-.font-large.grey[Preview device size]
-
-.font-large.grey[Group Preview]
-
-.font-large[Vary Language]
-]
-
-.right-column[
-<img src="assets/images/SwiftUI-preview-Text.png" width="200"/>
+<img src="assets/images/SwiftUI-preview-Text.png" width="180"/>
 ]
 
 ---
@@ -595,7 +579,7 @@ Similar to Scripting Language
 
 .right-column[
 ```swift
-viewController.preferredContentSize = Some Size...
+viewController.preferredContentSize = Some Size
 ```
 ]
 
