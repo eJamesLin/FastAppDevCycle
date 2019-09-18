@@ -50,26 +50,26 @@ List of App
 
 ---
 
-## Build whole APP is slow, but Partition?
+## Build Time
 --
 
 ### Whole APP
 
 .center[
-	<img src="assets/images/WholeAppBuildTime.png" width="400"/>
+	<img src="assets/images/BuildTimeWholeApp.png" width="400"/>
+]
+
+--
+
+### Partitioned Framework
+
+.center[
+	<img src="assets/images/BuildTimeFramework.png" width="400"/>
 ]
 
 ???
 
 Build time quickly disappear for indexing after build at Xcode title bar...
-
---
-
-### A partition
-
-???
-
-Add image here
 
 ---
 
