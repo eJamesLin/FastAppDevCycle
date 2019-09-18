@@ -255,20 +255,227 @@ class: blank
 
 ---
 
-## SwiftUI Preview Known Issue
+## SwiftUI Canvas Preview Advantage
+--
+
+.left-column[
+.font-large[Live Preview]
+]
+
+.right-column[
+* Interactable
+]
+--
+
+.right-column[
+* Can also preview UIViewController / UIView
+]
+
+---
+
+## SwiftUI Canvas Preview Advantage
+
+.left-column[
+.font-large.grey[Live Preview]
+
+.font-large[Fast Access]
+]
+
+.right-column[
+* Render the page directly
+
+* No need following steps
+1. Select A
+2. Scroll
+3. Click B
+4. ...
+]
+
+---
+
+## SwiftUI Canvas Preview Advantage
+
+.left-column[
+.font-large.grey[Live Preview]
+
+.font-large.grey[Fast Access]
+
+.font-large[Preview device size]
+]
+
+.right-column[
+```swift
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+        	.previewDevice("iPhone 11")
+    }
+}
+```
+]
+
+---
+
+## SwiftUI Canvas Preview Advantage
+
+.left-column[
+.font-large.grey[Live Preview]
+
+.font-large.grey[Fast Access]
+
+.font-large.grey[Preview device size]
+
+.font-large[Group Preview]
+]
+
+.right-column[
+```
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentView()
+            	.previewDevice("iPhone SE")
+
+            ContentView()
+            	.previewDevice("iPhone 11")
+        }
+    }
+}
+```
+]
+
+---
+
+## SwiftUI Canvas Preview Advantage
+
+.left-column[
+.font-large.grey[Live Preview]
+
+.font-large.grey[Fast Access]
+
+.font-large.grey[Preview device size]
+
+.font-large.grey[Group Preview]
+
+.font-large[Vary Language]
+]
+
+.right-column[
+```
+struct SwiftUIText: View {
+    var body: some View {
+        Text("HelloKey")
+    }
+}
+struct PreviewSwiftUIText: PreviewProvider {
+    static var previews: some View {
+        Group {
+            SwiftUIText()
+            .environment(\.locale, 
+                		 Locale(identifier: "en"))
+            .previewDisplayName("en")
+
+            SwiftUIText()
+	        .environment(\.locale, 
+	            	     Locale(identifier: "ja"))
+	        .previewDisplayName("ja")
+        }
+        .previewLayout(.sizeThatFits)
+    }
+}
+```
+]
+
+---
+
+## SwiftUI Canvas Preview Advantage
+
+.left-column[
+.font-large.grey[Live Preview]
+
+.font-large.grey[Fast Access]
+
+.font-large.grey[Preview device size]
+
+.font-large.grey[Group Preview]
+
+.font-large[Vary Language]
+]
+
+.right-column[
+<img src="assets/images/SwiftUI-preview-Text.png" width="200"/>
+]
+
+---
+
+## SwiftUI Canvas Preview Advantage
+
+.left-column[
+.font-large.grey[Live Preview]
+
+.font-large.grey[Fast Access]
+
+.font-large.grey[Preview device size]
+
+.font-large.grey[Group Preview]
+
+.font-large[Vary Language]
+]
+
+.right-column[
+### Not work at `NSLocalizedString`
+]
+
+---
+
+## SwiftUI Preview + NSLocalizedString
+
+.center[
+<img src="assets/images/SwiftUI-preview-NSLocalizedString.png" width="850"/>
+]
+
+---
+
+## SwiftUI Canvas Preview + Framework
+
+### Known Issue
+
+```
+Previews in packages always perform a full build of the active scheme. (51030302)
+```
+.footnote[[Xcode 11 Release Notes](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes)]
+
+.center[
+<img src="assets/images/SwiftUI-preview-issue.png" width="800"/>
+]
+
+---
+
+## SwiftUI Canvas Preview + Framework
+
+### Known Issue
 
 ```
 Previews in packages always perform a full build of the active scheme. (51030302)
 ```
 
-.footnote[[Xcode 11 Release Notes](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes)]
+Main Scheme
 
+.center[
+<img src="assets/images/SwiftUI-preview-issue-main-scheme.png" width="550"/>
+]
 
-<!-- .footnote[[https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes)] -->
+--
+
+Framework Scheme
+
+.center[
+<img src="assets/images/SwiftUI-preview-issue-framework.png" width="550"/>
+]
 
 ---
 
-## Framework + Playground
+## Playground + Framework
 
 .center[
 	<img src="assets/images/TodayPlayground.gif" width="800"/>
@@ -293,6 +500,28 @@ Previews in packages always perform a full build of the active scheme. (51030302
 .left-column[
 .font-large.grey[Live View]
 
+.font-large[Fast Access]
+]
+
+.right-column[
+* Render the page directly
+
+* No need following steps
+1. Select A
+2. Scroll
+3. Click B
+4. ...
+]
+
+---
+
+## Playground Advantage
+
+.left-column[
+.font-large.grey[Live View]
+
+.font-large.grey[Fast Access]
+
 .font-large[Inline Display]
 ]
 
@@ -306,6 +535,8 @@ Previews in packages always perform a full build of the active scheme. (51030302
 
 .left-column[
 .font-large.grey[Live View]
+
+.font-large.grey[Fast Access]
 
 .font-large.grey[Inline Display]
 
@@ -334,6 +565,8 @@ Similar to Scripting Language
 .left-column[
 .font-large.grey[Live View]
 
+.font-large.grey[Fast Access]
+
 .font-large.grey[Inline Display]
 
 .font-large[Run Step by Step]
@@ -352,6 +585,8 @@ Similar to Scripting Language
 
 .left-column[
 .font-large.grey[Live View]
+
+.font-large.grey[Fast Access]
 
 .font-large.grey[Inline Display]
 
@@ -373,6 +608,8 @@ viewController.preferredContentSize = Some Size...
 .left-column[
 .font-large.grey[Live View]
 
+.font-large.grey[Fast Access]
+
 .font-large.grey[Inline Display]
 
 .font-large.grey[Run Step by Step]
@@ -384,32 +621,6 @@ viewController.preferredContentSize = Some Size...
 
 .right-column[
 * Use `NSLocalizedString` with specified language sub-bundle
-]
-
----
-
-## Playground Advantage
-
-.left-column[
-.font-large.grey[Live View]
-
-.font-large.grey[Inline Display]
-
-.font-large.grey[Run Step by Step]
-
-.font-large.grey[Vary Screen Size]
-
-.font-large.grey[Vary Language]
-
-.font-large[Fast Access]
-]
-
-.right-column[
-* Render the page directly
-]
---
-.right-column[
-* No more `Select A`, then `Scroll`, and then `Click B` in order to access some page
 ]
 
 ---
