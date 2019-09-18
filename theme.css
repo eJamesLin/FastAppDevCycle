@@ -299,7 +299,7 @@ body {
     list-style: disc;
     position: relative;
     margin: 0.4em 0;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 .remark-slide-content ul>li>ul>li::before {
     content: "";

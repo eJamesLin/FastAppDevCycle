@@ -56,7 +56,7 @@ List of App
 ### Main Target
 
 .center[
-	<img src="assets/images/BuildTimeWholeApp.png" width="400"/>
+	<img src="assets/images/BuildTimeWholeApp.png" width="500"/>
 ]
 
 --
@@ -64,7 +64,7 @@ List of App
 ### Partitioned Framework Target
 
 .center[
-	<img src="assets/images/BuildTimeFramework.png" width="400"/>
+	<img src="assets/images/BuildTimeFramework.png" width="700"/>
 ]
 
 ???
@@ -110,7 +110,7 @@ class: blank
 ### Just start partitioning
 --
 
-### Don't worry architecture
+### Don't worry about architecture
 
 ---
 
@@ -123,7 +123,7 @@ class: blank
 --
 
 .right-column-20[
-	<img src="assets/images/TargetMembership.png" width="180"/>
+	<img src="assets/images/TargetMembership.png" width="200"/>
 ]
 
 * Testing-Only
