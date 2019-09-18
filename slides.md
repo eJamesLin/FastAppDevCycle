@@ -453,8 +453,6 @@ Previews in packages always perform a full build of the active scheme. (51030302
 
 ## SwiftUI Canvas Preview + Framework
 
-### Known Issue
-
 ```
 Previews in packages always perform a full build of the active scheme. (51030302)
 ```
@@ -462,7 +460,7 @@ Previews in packages always perform a full build of the active scheme. (51030302
 Main Scheme
 
 .center[
-<img src="assets/images/SwiftUI-preview-issue-main-scheme.png" width="550"/>
+<img src="assets/images/SwiftUI-preview-issue-main-scheme.png" width="630"/>
 ]
 
 --
@@ -470,7 +468,7 @@ Main Scheme
 Framework Scheme
 
 .center[
-<img src="assets/images/SwiftUI-preview-issue-framework.png" width="550"/>
+<img src="assets/images/SwiftUI-preview-issue-framework.png" width="630"/>
 ]
 
 ---
