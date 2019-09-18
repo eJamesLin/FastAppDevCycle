@@ -53,7 +53,7 @@ List of App
 ## Build Time
 --
 
-### Whole APP
+### Main Target
 
 .center[
 	<img src="assets/images/BuildTimeWholeApp.png" width="400"/>
@@ -61,7 +61,7 @@ List of App
 
 --
 
-### Partitioned Framework
+### Partitioned Framework Target
 
 .center[
 	<img src="assets/images/BuildTimeFramework.png" width="400"/>
@@ -100,18 +100,36 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 class: blank
 
 .vertical-center.center[
-## Small Debug-only Framework
+## Small Testing-Only Framework
 ]
 
 ---
 
-## Small dummy Framework
+## Small Testing-Only Framework
 
-### Not embedded by other target
+### Just start partitioning
+--
+
+### Don't worry architecture
 
 ---
 
-### Not linked by other target
+## Small Testing-Only Framework
+
+* Build Fast
+	* Feature related code only
+	* Few compile source count
+
+--
+
+.right-column-20[
+	<img src="assets/images/TargetMembership.png" width="180"/>
+]
+
+* Testing-Only
+	* Code in both targets
+	* Not embedded in others
+	* Not linked by others
 
 ---
 
@@ -128,7 +146,9 @@ class: blank
 ### How `Coordinator` eliminate dependency?
 
 * Example
-	* In `Profile`, click `Edit` button, and show `EditProfile`
+	1. In `Profile`
+	2. Click `Edit` button
+	3. Show `EditProfile`
 --
 
 * If show `EditProfile` directly in `Profile` class
@@ -216,6 +236,22 @@ class ProfileViewController: UIViewController {
 ---
 
 ## Dependency Injection
+
+---
+
+class: blank
+
+.vertical-center.center[
+## Framework + Live View
+]
+
+---
+
+## Framework + Live View
+
+### SwiftUI Canvas Preview
+
+### Playground
 
 ---
 
