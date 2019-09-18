@@ -255,6 +255,19 @@ class: blank
 
 ---
 
+## SwiftUI Preview Known Issue
+
+```
+Previews in packages always perform a full build of the active scheme. (51030302)
+```
+
+.footnote[[Xcode 11 Release Notes](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes)]
+
+
+<!-- .footnote[[https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes)] -->
+
+---
+
 ## Framework + Playground
 
 .center[
