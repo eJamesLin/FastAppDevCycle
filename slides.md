@@ -683,14 +683,6 @@ Add more detail if still have time
 
 ---
 
-## References
-
-* https://help.apple.com/xcode/mac/9.0/#/devc9b33111c
-
-* https://medium.com/flawless-app-stories/playground-driven-development-in-swift-cf167489fe7b
-
----
-
 ## Build and Run no more!
 
 .vertical-center.center[
