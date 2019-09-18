@@ -8,8 +8,14 @@
 - This is the slide presented at [iPlayground2019](https://iplayground.io/2019)
 
 ### Running at Local
-- Run: python -m SimpleHTTPServer 4000
-- or run: ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 4000, :DocumentRoot => Dir.pwd).start'
+- Start local server by 
+```
+python -m SimpleHTTPServer 4000
+```
+- or by
+```
+ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 4000, :DocumentRoot => Dir.pwd).start'
+```
 - Then open: http://localhost:4000
 
 ### Special Thanks
