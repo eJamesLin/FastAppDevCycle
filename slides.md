@@ -73,6 +73,152 @@ Add image here
 
 ---
 
+## Framework Partitioning Tips
+
+.center[
+	<img src="assets/images/SimpleArchitecture.jpg" width="800"/>
+]
+
+---
+
+## Framework Partitioning Tips
+
+.center[
+	<img src="assets/images/IdealPartitionedArchitecture.jpg" width="800"/>
+]
+
+---
+
+## Framework Partitioning Tips
+
+.center[
+	<img src="assets/images/RealArchitecture.jpg" width="800"/>
+]
+
+---
+
+class: blank
+
+.vertical-center.center[
+## Small Debug-only Framework
+]
+
+---
+
+## Small dummy Framework
+
+### Not embedded by other target
+
+---
+
+### Not linked by other target
+
+---
+
+## Framework Partitioning Tips
+
+### Coordinator / Router
+
+### Dependency Injection
+
+---
+
+## Coordinator / Router
+
+### How `Coordinator` eliminate dependency?
+
+* Example
+	* In `Profile`, click `Edit` button, and show `EditProfile`
+--
+
+* If show `EditProfile` directly in `Profile` class
+	* `Profile` is depends on `EditProfile`
+	* Difficult to move into framework
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+```
+
+```swift
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator1.png" width="500"/>
+]
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+```
+
+```swift
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator2.png" width="500"/>
+]
+
+---
+
+## Coordinator / Router
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
+}
+```
+
+```swift
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+.center[
+<img src="assets/images/Coordinator3.png" width="500"/>
+]
+
+---
+
+## Dependency Injection
+
+---
+
 ## Framework + Playground
 
 .center[
@@ -276,134 +422,6 @@ Add more detail if still have time
 ### Framework Partitioning Tips
 
 ### LLDB
-
----
-
-## Framework Partitioning Tips
-
-.center[
-	<img src="assets/images/SimpleArchitecture.jpg" width="800"/>
-]
-
----
-
-## Framework Partitioning Tips
-
-.center[
-	<img src="assets/images/IdealPartitionedArchitecture.jpg" width="800"/>
-]
-
----
-
-## Framework Partitioning Tips
-
-.center[
-	<img src="assets/images/RealArchitecture.jpg" width="800"/>
-]
-
----
-
-## Framework Partitioning Tips
-
-### Coordinator / Router
-
-### Dependency Injection
-
----
-
-## Coordinator / Router
-
-### How `Coordinator` eliminate dependency?
-
-* Example
-	* In `Profile`, click `Edit` button, and show `EditProfile`
---
-
-* If show `EditProfile` directly in `Profile` class
-	* `Profile` is depends on `EditProfile`
-	* Difficult to move into framework
-
----
-
-## Coordinator / Router
-
-```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-```swift
-protocol ProfileViewControllerDelegate: class {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
-}
-
-class ProfileViewController: UIViewController {
-	weak var delegate: ProfileViewControllerDelegate?
-}
-```
-
-.center[
-<img src="assets/images/Coordinator1.png" width="500"/>
-]
-
----
-
-## Coordinator / Router
-
-```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-```swift
-protocol ProfileViewControllerDelegate: class {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
-}
-
-class ProfileViewController: UIViewController {
-	weak var delegate: ProfileViewControllerDelegate?
-}
-```
-
-.center[
-<img src="assets/images/Coordinator2.png" width="500"/>
-]
-
----
-
-## Coordinator / Router
-
-```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-```swift
-protocol ProfileViewControllerDelegate: class {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
-}
-
-class ProfileViewController: UIViewController {
-	weak var delegate: ProfileViewControllerDelegate?
-}
-```
-
-.center[
-<img src="assets/images/Coordinator3.png" width="500"/>
-]
-
----
-
-## Dependency Injection
 
 ---
 
