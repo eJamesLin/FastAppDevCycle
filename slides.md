@@ -237,7 +237,39 @@ class ProfileViewController: UIViewController {
 
 ---
 
-## Dependency Injection
+## Dependency Injection Example
+--
+
+```
+enum AnalyticsScreen {
+    case feed
+}
+
+protocol AnalyticsProtocol {
+    func track(screen: AnalyticsScreen)
+}
+```
+
+```
+class Analytics: AnalyticsProtocol {
+    func track(screen: AnalyticsScreen) {
+        GA.track(screen: screen)
+    }
+}
+```
+
+```
+class FeedController: UIViewController {
+    let analytics: AnalyticsProtocol
+    init(analytics: AnalyticsProtocol) {
+        self.analytics = analytics
+        super.init(nibName: nil, bundle: nil)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        analytics.track(screen: .feed)
+    }
+```
 
 ---
 
