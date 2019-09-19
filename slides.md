@@ -420,7 +420,7 @@ struct PreviewSwiftUIText: PreviewProvider {
 ]
 
 .left-column[
-<img src="assets/images/SwiftUI-preview-Text.png" width="180"/>
+<img src="assets/images/SwiftUI-preview-Text.png" width="160"/>
 ]
 
 ---
