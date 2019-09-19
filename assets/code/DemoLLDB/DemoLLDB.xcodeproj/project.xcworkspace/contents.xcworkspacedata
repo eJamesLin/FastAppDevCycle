@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LLDB_Demo.xcodeproj">
+      location = "self:DemoLLDB.xcodeproj">
    </FileRef>
 </Workspace>
