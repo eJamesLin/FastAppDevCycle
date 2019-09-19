@@ -244,7 +244,6 @@ class ProfileViewController: UIViewController {
 enum AnalyticsScreen {
     case feed
 }
-
 protocol AnalyticsProtocol {
     func track(screen: AnalyticsScreen)
 }
