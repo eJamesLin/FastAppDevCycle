@@ -265,6 +265,11 @@ protocol AnalyticsProtocol {
 }
 ```
 
+???
+
+Start from `AnalyticsProtocol` definition
+--
+
 ```
 class Analytics: AnalyticsProtocol {
     func track(screen: AnalyticsScreen) {
@@ -272,6 +277,11 @@ class Analytics: AnalyticsProtocol {
     }
 }
 ```
+
+???
+
+`Analytics` conforms to the protocol
+--
 
 ```
 class FeedController: UIViewController {
@@ -285,6 +295,11 @@ class FeedController: UIViewController {
         analytics.track(screen: .feed)
     }
 ```
+
+???
+
+Controller is now depends on only the protocol,
+not the `Analytics`, nor the implementation detail GA.
 
 ---
 
