@@ -637,22 +637,22 @@ viewController.preferredContentSize = Some Size
 
 ## LLDB
 
-LLDB and Breakpoints
+* LLDB and Breakpoints
 
-Modify control flow without rebuild
+* Modify control flow without rebuild
 --
 
 .center[
-	<img src="assets/images/lldb-breakpoint1.png" width="600"/>
+	<img src="assets/images/lldb-breakpoint1.png" width="550"/>
 ]
 
 ---
 
 ## LLDB
 
-LLDB and Breakpoints
+* LLDB and Breakpoints
 
-Modify control flow without rebuild
+* Modify control flow without rebuild
 
 .center[
 	<img src="assets/images/lldb-breakpoint2.png" width="800"/>
@@ -662,11 +662,11 @@ Modify control flow without rebuild
 
 ## LLDB + REPL
 
-### Read-Eval-Print-Loop (REPL)
+* Read-Eval-Print-Loop (REPL)
 
-### Access public functions and global variables
+* Access public functions and global variables
 
-### Inject new functions
+* Inject new functions
 
 ---
 
@@ -729,7 +729,7 @@ Modify control flow without rebuild
 * Modify variable by calling the injected function
 
 .center[
-	<img src="assets/images/repl-breakpoint-call-injected-function.png" width="800"/>
+	<img src="assets/images/repl-breakpoint-call-injected-function.png" width="810"/>
 ]
 
 ---
