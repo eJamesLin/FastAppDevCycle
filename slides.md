@@ -635,6 +635,105 @@ viewController.preferredContentSize = Some Size
 
 ---
 
+## LLDB
+
+LLDB and Breakpoints
+
+Modify control flow without rebuild
+--
+
+.center[
+	<img src="assets/images/lldb-breakpoint1.png" width="600"/>
+]
+
+---
+
+## LLDB
+
+LLDB and Breakpoints
+
+Modify control flow without rebuild
+
+.center[
+	<img src="assets/images/lldb-breakpoint2.png" width="800"/>
+]
+
+---
+
+## LLDB + REPL
+
+### Read-Eval-Print-Loop (REPL)
+
+### Access public functions and global variables
+
+### Inject new functions
+
+---
+
+## LLDB + REPL
+
+* Example
+
+.center[
+	<img src="assets/images/repl-example1.png" width="800"/>
+]
+
+---
+
+## LLDB + REPL
+
+* Type `repl` to enter
+
+.center[
+	<img src="assets/images/repl-enter.png" width="800"/>
+]
+
+--
+
+* Inject new function
+
+.center[
+	<img src="assets/images/repl-injection.png" width="500"/>
+]
+
+---
+
+## LLDB + REPL
+
+* Call the function and verify
+
+.center[
+	<img src="assets/images/repl-call-function.png" width="450"/>
+]
+
+--
+
+* Prefix `:` to run LLDB command
+
+.center[
+	<img src="assets/images/repl-p.png" width="400"/>
+]
+
+---
+
+## LLDB + REPL
+
+* Type single colon to return back to LLDB 
+
+.center[
+	<img src="assets/images/repl-return.png" width="100"/>
+]
+
+--
+
+* Modify variable by calling the injected function
+
+.center[
+	<img src="assets/images/repl-breakpoint-call-injected-function.png" width="800"/>
+]
+
+---
+
 ## Happy Coding
 
 .vertical-center.center[
