@@ -6,9 +6,21 @@ class: title
 
 CJ Lin
 
+???
+
+This talk is not about lower overall build time
+
+It's about tips of faster dev/verification cycle
+
+Let's start it!
+
 ---
 
 ## Let's do a little survey...
+
+???
+
+App build time > 10 mins
 --
 
 ### Can't tolerate LONG BUILD TME?
@@ -32,10 +44,11 @@ struct Profile {
 
     var blog = "https://ejameslin.github.io"
 
+    var github = "https://github.com/eJamesLin"
+
     var line = "ejameslin"
 
     var twitter = "@eJamesLin"
-
 }
 ```
 
@@ -99,20 +112,19 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 
 ---
 
-class: blank
+## Let's start from small step
 
 .vertical-center.center[
-## Small Testing-Only Framework
+### Ideal partition is too ideal
 ]
 
 ---
 
-## Small Testing-Only Framework
+## Let's start from small step
 
-### Just start partitioning
---
-
-### Don't worry about architecture
+.vertical-center.center[
+### Small Testing-Only Framework
+]
 
 ---
 
@@ -132,6 +144,9 @@ class: blank
 	* Code in both targets
 	* Not embedded in others
 	* Not linked by others
+--
+
+* Easy to apply on existing project
 
 ---
 
@@ -153,9 +168,10 @@ class: blank
 	3. Show `EditProfile`
 --
 
-* If show `EditProfile` directly in `Profile` class
-	* `Profile` is depends on `EditProfile`
-	* Difficult to move into framework
+* `Profile` is depends on `EditProfile`
+--
+
+* Difficult to move into framework
 
 ---
 
