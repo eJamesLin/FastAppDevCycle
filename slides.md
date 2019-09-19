@@ -56,7 +56,7 @@ List of App
 ### Main Target
 
 .center[
-	<img src="assets/images/BuildTimeWholeApp.png" width="500"/>
+	<img src="assets/images/BuildTimeWholeApp.png" width="450"/>
 ]
 
 --
@@ -64,7 +64,7 @@ List of App
 ### Partitioned Framework Target
 
 .center[
-	<img src="assets/images/BuildTimeFramework.png" width="700"/>
+	<img src="assets/images/BuildTimeFramework.png" width="600"/>
 ]
 
 ???
@@ -465,6 +465,20 @@ Framework Scheme
 
 ---
 
+## Playground + Framework
+
+* Objetive-C framework supported
+	* Add bridging header
+--
+
+* CocoaPods/Carthage supported
+
+???
+
+Add more detail if still have time
+
+---
+
 ## Playground Advantage
 
 .left-column[
@@ -607,40 +621,6 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## Custom framework in playground
-
-* Objetive-C framework supported
-	* Add bridging header
---
-
-* CocoaPods/Carthage supported
-
-???
-
-Add more detail if still have time
-
----
-
-## Custom framework in playground
-
-1. Add the playground into the workspace
---
-
-2. `import` or `@testable import` the framework
-	with Testability enabled in settings
---
-
-3. Build the framework
---
-
-4. Start playgrounding
---
-
-
-.footnote[[Apple Document](https://help.apple.com/xcode/mac/9.0/#/devc9b33111c)]
-
----
-
 ## Playground Driven Development
 
 * From Kickstarter [Open Source](https://github.com/kickstarter/ios-oss) and [Speech](https://www.youtube.com/watch?v=DrdxSNG-_DE)
@@ -653,21 +633,7 @@ Add more detail if still have time
 
 ---
 
-## Outline
-
-### Framework + Playground
-
-### Playground Advantage
-
-### Playground Tips
-
-### Framework Partitioning Tips
-
-### LLDB
-
----
-
-## Build and Run no more!
+## Happy Coding
 
 .vertical-center.center[
 # Thank you
