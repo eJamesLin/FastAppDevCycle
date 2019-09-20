@@ -30,7 +30,7 @@ App build time > 10 mins
 
 ---
 
-## About me
+## About
 
 .left-column-80[
 ```swift
@@ -52,16 +52,16 @@ struct Profile {
 }
 ```
 
+]
+
+.right-column-20[
+<img src="assets/profile/cj.png" width="150"/>
 <img src="assets/profile/LINE.png" width="50"/>
 <img src="assets/profile/LINE-SDK.png" width="50"/>
 <img src="assets/profile/LINE-TODAY.png" width="50"/>
 <img src="assets/profile/BobMarley.png" width="50"/>
 <img src="assets/profile/MamiLove.png" width="50"/>
 <img src="assets/profile/MENU.png" width="50"/>
-]
-
-.right-column-20[
-<img src="assets/profile/cj.png" width="150"/>
 ]
 
 ---
