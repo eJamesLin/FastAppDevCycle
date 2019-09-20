@@ -390,6 +390,33 @@ not the `Analytics`, nor the implementation detail GA.
 
 ---
 
+## SwiftUI Preview at iOS 12 and below
+
+Though SwiftUI cannot be used at iOS 12 and below 
+
+Still could preview existing screens
+
+```
+The `@available(iOS 13.0, *)` is not enough...
+
+dyld: Library not loaded: /System/Library/Frameworks/SwiftUI.framework/SwiftUI
+```
+
+--
+
+```
+Known Issues and Workaround
+Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729)
+```
+
+.center[
+<img src="https://ejameslin.github.io/assets/2019/SwiftUI-weak-framework.png" width="600"/>
+
+.footnote[[iOS 13 Release Notes](https://developer.apple.com/documentation/ios_ipados_release_notes/ios_13_release_notes)]
+]
+
+---
+
 ## SwiftUI Canvas Preview Advantage
 
 .left-column[
@@ -582,20 +609,6 @@ Framework Scheme
 
 ---
 
-## Playground + Framework
-
-* Objetive-C framework supported
-	* Add bridging header
---
-
-* CocoaPods/Carthage supported
-
-???
-
-Add more detail if still have time
-
----
-
 ## Playground Advantage
 
 .left-column[
@@ -714,6 +727,10 @@ viewController.preferredContentSize = Some Size
 ```
 ]
 
+???
+
+No safe area...
+
 ---
 
 ## Playground Advantage
@@ -734,6 +751,8 @@ viewController.preferredContentSize = Some Size
 
 .right-column[
 * Use `NSLocalizedString` with specified language sub-bundle
+
+<img src="assets/images/vary-lang.png" width="500"/>
 ]
 
 ---
