@@ -95,6 +95,14 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 
 ---
 
+## Avoid Build and Run the main target
+
+.vertical-center.center[
+### Build only the feature developing now 
+]
+
+---
+
 ## Framework Partitioning Tips
 
 .center[
@@ -688,6 +696,23 @@ viewController.preferredContentSize = Some Size
 
 .right-column[
 * Use `NSLocalizedString` with specified language sub-bundle
+]
+
+---
+
+## Test Driven Development in Playground
+
+* To build faster at every iteration
+	* SUT (System Under Test) in Framework
+	* Start unit test in playground, move to test target for CI after completed
+
+```
+MyUnitTests.defaultTestSuite().run() // in playground
+```
+
+.center[
+<img src="assets/images/TDD.webp" width="400"/>
+.font-small[[Image Source](https://www.allaboutcircuits.com/technical-articles/how-test-driven-development-can-help-you-write-better-unit-tests/)]
 ]
 
 ---
