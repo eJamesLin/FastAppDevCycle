@@ -697,7 +697,7 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## LLDB
+## Code Injection
 
 * LLDB and Breakpoints
 
@@ -710,7 +710,7 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## LLDB
+## Code Injection
 
 * LLDB and Breakpoints
 
@@ -722,7 +722,9 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## LLDB + REPL
+## Code Injection
+
+* LLDB + REPL
 
 * Read-Eval-Print-Loop (REPL)
 
@@ -732,7 +734,7 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## LLDB + REPL
+## Code Injection
 
 * Example
 
@@ -742,7 +744,7 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## LLDB + REPL
+## Code Injection
 
 * Type `repl` to enter
 
@@ -760,7 +762,7 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## LLDB + REPL
+## Code Injection
 
 * Call the function and verify
 
@@ -778,7 +780,7 @@ viewController.preferredContentSize = Some Size
 
 ---
 
-## LLDB + REPL
+## Code Injection
 
 * Type single colon to return back to LLDB 
 
