@@ -1,8 +1,8 @@
 class: title
 
-# The Survival Guide of Building Huge App
+# 10x Faster App Dev/Verification Cycle
 
-10x Faster Dev/Verification Cycle
+The Survival Guide of Building Huge App
 
 CJ Lin
 
