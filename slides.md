@@ -109,6 +109,10 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 	<img src="assets/images/SimpleArchitecture.jpg" width="800"/>
 ]
 
+???
+
+Feature could be MVC or MVVM or MVP
+
 ---
 
 ## Framework Partitioning Tips
@@ -248,12 +252,27 @@ class Coordinator: ProfileViewControllerDelegate {
 ---
 
 ## Dependency Injection Example
+
+.center[
+<img src="assets/images/DI-none.png" width="600"/>
+]
+--
+
+.center[
+<img src="assets/images/DI-1.png" width="600"/>
+]
+--
+
+.center[
+<img src="assets/images/DI-2.png" width="600"/>
+]
+
+---
+
+## Dependency Injection Example
 --
 
 ```
-enum AnalyticsScreen {
-    case feed
-}
 protocol AnalyticsProtocol {
     func track(screen: AnalyticsScreen)
 }
@@ -294,6 +313,16 @@ class FeedController: UIViewController {
 
 Controller is now depends on only the protocol,
 not the `Analytics`, nor the implementation detail GA.
+
+---
+
+## Framework Partitioning Tips
+
+* Ready for framework partitioning
+
+.center[
+    <img src="assets/images/PartitionedArchitecture.jpg" width="800"/>
+]
 
 ---
 
