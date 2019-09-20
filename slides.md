@@ -51,7 +51,6 @@ struct Profile {
     var twitter = "@eJamesLin"
 }
 ```
-
 ]
 
 .right-column-20[
@@ -62,6 +61,14 @@ struct Profile {
 <img src="assets/profile/BobMarley.png" width="50"/>
 <img src="assets/profile/MamiLove.png" width="50"/>
 <img src="assets/profile/MENU.png" width="50"/>
+]
+
+.left-column-80.footnote[
+The slides is made by Markdown powered by [remark](https://github.com/gnab/remark)
+
+The source code and sample code of the slides could be found [here](https://github.com/eJamesLin/iPlayground2019)
+
+<img src="assets/profile/SlidesQRCode.svg" width="120"/>
 ]
 
 ---

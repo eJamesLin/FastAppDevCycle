@@ -1,5 +1,5 @@
 ### Slides at GitHub page
-- https://ejameslin.github.io/iPlayground2019
+- https://ejameslin.github.io/FastAppDevCycle
 
 ### About
 - 大型專案生存守則 - 10x 加速開發技巧
@@ -19,5 +19,5 @@ ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 4000, :DocumentRoot => Dir.pw
 - Then open: http://localhost:4000
 
 ### Special Thanks
-- The slides is made by markdown language using [remark](https://github.com/gnab/remark)
+- The slides is made by Markdown using [remark](https://github.com/gnab/remark)
 - The css theme is forked from [Blue Standard Theme](https://github.com/sfc-arch/remark-theme)
