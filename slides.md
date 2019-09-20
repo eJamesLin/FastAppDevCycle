@@ -193,12 +193,28 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 ## Coordinator / Router
 
 ```swift
+protocol ProfileViewControllerDelegate: class {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
+}
+
+class ProfileViewController: UIViewController {
+	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+--
+
+```swift
 class Coordinator: ProfileViewControllerDelegate {
 	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
 		// show EditProfileViewController...
 	}
 }
 ```
+
+---
+
+## Coordinator / Router
 
 ```swift
 protocol ProfileViewControllerDelegate: class {
@@ -207,6 +223,14 @@ protocol ProfileViewControllerDelegate: class {
 
 class ProfileViewController: UIViewController {
 	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
 }
 ```
 
@@ -219,20 +243,20 @@ class ProfileViewController: UIViewController {
 ## Coordinator / Router
 
 ```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-```swift
 protocol ProfileViewControllerDelegate: class {
 	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
 }
 
 class ProfileViewController: UIViewController {
 	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
 }
 ```
 
@@ -245,20 +269,20 @@ class ProfileViewController: UIViewController {
 ## Coordinator / Router
 
 ```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-```swift
 protocol ProfileViewControllerDelegate: class {
 	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
 }
 
 class ProfileViewController: UIViewController {
 	weak var delegate: ProfileViewControllerDelegate?
+}
+```
+
+```swift
+class Coordinator: ProfileViewControllerDelegate {
+	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
+		// show EditProfileViewController...
+	}
 }
 ```
 
