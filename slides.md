@@ -95,10 +95,34 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 
 ---
 
-## Avoid Build and Run the main target
+class: blank
 
 .vertical-center.center[
-### Build only the feature developing now 
+## Avoid Build-and-Run Whole App
+]
+
+---
+
+## Outline
+--
+
+### Develop only at Framework
+--
+
+### Verify the Framework
+--
+
+### Code Injection to minimize rebuild
+
+---
+
+## Outline
+
+### Develop only at Framework
+
+.grey[
+### Verify the Framework
+### Code Injection to minimize rebuild
 ]
 
 ---
@@ -326,10 +350,16 @@ not the `Analytics`, nor the implementation detail GA.
 
 ---
 
-class: blank
+## Outline
 
-.vertical-center.center[
-## Framework + Live View
+.grey[
+### Develop only at Framework
+]
+
+### Verify the Framework
+
+.grey[
+### Code Injection to minimize rebuild
 ]
 
 ---
@@ -719,7 +749,7 @@ MyUnitTests.defaultTestSuite().run() // in playground
 ```
 
 .center[
-<img src="assets/images/TDD.webp" width="400"/>
+<img src="assets/images/TDD.png" width="400"/>
 .font-small[[Image Source](https://www.allaboutcircuits.com/technical-articles/how-test-driven-development-can-help-you-write-better-unit-tests/)]
 ]
 
@@ -734,6 +764,17 @@ MyUnitTests.defaultTestSuite().run() // in playground
 .center[
 	<img src="assets/images/kickstarter.jpg" width="800"/>
 ]
+
+---
+
+## Outline
+
+.grey[
+### Develop only at Framework
+### Verify the Framework
+]
+
+### Code Injection to minimize rebuild
 
 ---
 
@@ -807,15 +848,17 @@ MyUnitTests.defaultTestSuite().run() // in playground
 * Call the function and verify
 
 .center[
-	<img src="assets/images/repl-call-function.png" width="450"/>
+	<img src="assets/images/repl-call-function.png" width="700"/>
 ]
 
---
+---
+
+## Code Injection
 
 * Prefix `:` to run LLDB command
 
 .center[
-	<img src="assets/images/repl-p.png" width="400"/>
+	<img src="assets/images/repl-p.png" width="600"/>
 ]
 
 ---
@@ -828,7 +871,9 @@ MyUnitTests.defaultTestSuite().run() // in playground
 	<img src="assets/images/repl-return.png" width="100"/>
 ]
 
---
+---
+
+## Code Injection
 
 * Modify variable by calling the injected function
 
