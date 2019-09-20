@@ -167,9 +167,7 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 
 ## Framework Partitioning Tips
 
-### Coordinator / Router
-
-### Dependency Injection
+* Coordinator / Router
 
 ---
 
@@ -178,9 +176,12 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 ### How `Coordinator` eliminate dependency?
 
 * Example
-	1. In `Profile`
-	2. Click `Edit` button
-	3. Show `EditProfile`
+	* In `Profile`, Click `Edit` button, Show `EditProfile`
+
+.center[
+<img src="assets/images/Coordinator0.png" width="500"/>
+]
+
 --
 
 * `Profile` is depends on `EditProfile`
@@ -192,6 +193,30 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 
 ## Coordinator / Router
 
+.vertical-center.center[
+<img src="assets/images/Coordinator1.png" width="700"/>
+]
+
+---
+
+## Coordinator / Router
+
+.vertical-center.center[
+<img src="assets/images/Coordinator2.png" width="700"/>
+]
+
+---
+
+## Coordinator / Router
+
+.vertical-center.center[
+<img src="assets/images/Coordinator3.png" width="700"/>
+]
+
+---
+
+## Coordinator / Router
+
 ```swift
 protocol ProfileViewControllerDelegate: class {
 	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
@@ -214,81 +239,11 @@ class Coordinator: ProfileViewControllerDelegate {
 
 ---
 
-## Coordinator / Router
+## Framework Partitioning Tips
 
-```swift
-protocol ProfileViewControllerDelegate: class {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
-}
+* .grey[Coordinator / Router]
 
-class ProfileViewController: UIViewController {
-	weak var delegate: ProfileViewControllerDelegate?
-}
-```
-
-```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-.center[
-<img src="assets/images/Coordinator1.png" width="500"/>
-]
-
----
-
-## Coordinator / Router
-
-```swift
-protocol ProfileViewControllerDelegate: class {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
-}
-
-class ProfileViewController: UIViewController {
-	weak var delegate: ProfileViewControllerDelegate?
-}
-```
-
-```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-.center[
-<img src="assets/images/Coordinator2.png" width="500"/>
-]
-
----
-
-## Coordinator / Router
-
-```swift
-protocol ProfileViewControllerDelegate: class {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {}
-}
-
-class ProfileViewController: UIViewController {
-	weak var delegate: ProfileViewControllerDelegate?
-}
-```
-
-```swift
-class Coordinator: ProfileViewControllerDelegate {
-	viewControllerDidSelectEdit(_ vc: ProfileViewController) {
-		// show EditProfileViewController...
-	}
-}
-```
-
-.center[
-<img src="assets/images/Coordinator3.png" width="500"/>
-]
+* Dependency Injection
 
 ---
 
