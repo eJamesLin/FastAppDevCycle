@@ -192,7 +192,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * In the code todo
 * Implement a view model to download API json
@@ -203,7 +203,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * Type `e` in LLDB to enter multi-line expressions
 
@@ -213,7 +213,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * Inject ViewModel and API code
 
@@ -223,7 +223,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * Json URL
 
@@ -233,7 +233,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * Download 
 
@@ -243,7 +243,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * Runloop handling at LLDB
 
@@ -253,7 +253,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * Call the injected function
 
@@ -263,7 +263,7 @@ Minimize the number of rebuild
 
 ---
 
-## Code Injection Example - API ViewModel
+## Code Injection Example - API
 
 * Inspect the result
 
