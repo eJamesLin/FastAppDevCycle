@@ -54,7 +54,7 @@ struct Profile {
 class: blank
 
 .vertical-center.center[
-## Avoid Build-and-Run Whole App
+## Don't Build-and-Run Whole App
 ]
 
 ---
@@ -326,7 +326,7 @@ Build time quickly disappear for indexing after build at Xcode title bar...
 class: blank
 
 .vertical-center.center[
-## Avoid Build-and-Run Whole App
+## Don't Build-and-Run Whole App
 ]
 
 ---
@@ -991,7 +991,7 @@ MyUnitTests.defaultTestSuite().run() // in playground
 class: blank
 
 .vertical-center.center[
-## Avoid Build-and-Run Whole App
+## Don't Build-and-Run Whole App
 ]
 
 ---
