@@ -1032,7 +1032,7 @@ class: blank
 
 * The slides is made by Markdown powered by [remark](https://github.com/gnab/remark)
 
-* The markdown and sample code of the slides could be found [here](https://github.com/eJamesLin/iPlayground2019)
+* The markdown and sample code of the slides could be found [here](https://github.com/eJamesLin/FastAppDevCycle)
 
 .center[<img src="assets/profile/SlidesQRCode.svg" width="200"/>]
 
