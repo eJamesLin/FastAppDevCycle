@@ -16,20 +16,6 @@ Let's start it!
 
 ---
 
-## Let's do a little survey...
-
-???
-
-App build time > 10 mins
---
-
-### Can't tolerate LONG BUILD TME?
---
-
-### Let's solve it !!!
-
----
-
 ## About
 
 .left-column-80[
@@ -63,13 +49,220 @@ struct Profile {
 <img src="assets/profile/MENU.png" width="50"/>
 ]
 
-.left-column-80.footnote[
-The slides is made by Markdown powered by [remark](https://github.com/gnab/remark)
+---
 
-The source code and sample code of the slides could be found [here](https://github.com/eJamesLin/iPlayground2019)
+class: blank
 
-<img src="assets/profile/SlidesQRCode.svg" width="120"/>
+.vertical-center.center[
+## Avoid Build-and-Run Whole App
 ]
+
+---
+
+## Outline
+
+### LLDB Code Injection
+--
+
+### Develop only at Framework
+--
+
+### Verify the Framework
+
+---
+
+## Outline
+
+### LLDB Code Injection
+
+.grey[
+### Develop only at Framework
+
+### Verify the Framework
+]
+
+---
+
+## LLDB Code Injection
+
+* LLDB and Breakpoints
+
+* Modify control flow without rebuild
+
+---
+
+## Code Injection Example - Login
+
+.vertical-center.center[
+    <img src="assets/images/lldb-breakpoint1.png" width="650"/>
+]
+
+---
+
+## Code Injection Example - Login
+
+.vertical-center.center[
+    <img src="assets/images/lldb-breakpoint2.png" width="800"/>
+]
+
+---
+
+## Code Injection - REPL
+
+* LLDB + REPL
+
+* Read-Eval-Print-Loop (REPL)
+
+* Access public functions and global variables
+
+* Inject new functions
+
+---
+
+## Code Injection Example - Fibonacci
+
+.vertical-center.center[
+    <img src="assets/images/repl-example1.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - Fibonacci
+
+* Type `repl` to enter
+
+.center[
+    <img src="assets/images/repl-enter.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - Fibonacci
+
+* Inject new function
+
+.center[
+    <img src="assets/images/repl-injection.png" width="500"/>
+]
+
+---
+
+## Code Injection Example - Fibonacci
+
+* Call the function and verify
+
+.center[
+    <img src="assets/images/repl-call-function.png" width="700"/>
+]
+
+---
+
+## Code Injection Example - Fibonacci
+
+* Prefix `:` to run LLDB command
+
+.center[
+    <img src="assets/images/repl-p.png" width="600"/>
+]
+
+---
+
+## Code Injection Example - Fibonacci
+
+* Type single colon to return back to LLDB 
+
+.center[
+    <img src="assets/images/repl-return.png" width="100"/>
+]
+
+---
+
+## Code Injection Example - Fibonacci
+
+* Modify variable by calling the injected function
+
+.center[
+    <img src="assets/images/repl-breakpoint-call-injected-function.png" width="810"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* In the code todo
+* Implement a view model to fetch API result
+
+.center[
+    <img src="assets/images/lldb-ex3-breakpoint.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Type `e` in LLDB to enter multi-line expressions
+
+.center[
+    <img src="assets/images/lldb-ex3-e.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Inject ViewModel and API code
+
+.center[
+    <img src="assets/images/lldb-ex3-inject-vm.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Call the injected function
+
+.center[
+    <img src="assets/images/lldb-ex3-call-vm.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Inspect the result
+
+.center[
+    <img src="assets/images/lldb-ex3-v.png" width="800"/>
+]
+
+---
+
+## Outline
+
+.grey[
+### LLDB Code Injection
+]
+
+### Develop only at Framework
+
+.grey[
+### Verify the Framework
+]
+
+---
+
+## Let's do a little survey...
+
+???
+
+App build time > 10 mins
+--
+
+### Can't tolerate LONG BUILD TME?
+--
+
+### Let's solve it !!!
 
 ---
 
@@ -99,30 +292,6 @@ class: blank
 
 .vertical-center.center[
 ## Avoid Build-and-Run Whole App
-]
-
----
-
-## Outline
---
-
-### Develop only at Framework
---
-
-### Verify the Framework
---
-
-### Code Injection to minimize rebuild
-
----
-
-## Outline
-
-### Develop only at Framework
-
-.grey[
-### Verify the Framework
-### Code Injection to minimize rebuild
 ]
 
 ---
@@ -353,14 +522,12 @@ not the `Analytics`, nor the implementation detail GA.
 ## Outline
 
 .grey[
+### Code Injection to minimize rebuild
+
 ### Develop only at Framework
 ]
 
 ### Verify the Framework
-
-.grey[
-### Code Injection to minimize rebuild
-]
 
 ---
 
@@ -405,7 +572,7 @@ dyld: Library not loaded: /System/Library/Frameworks/SwiftUI.framework/SwiftUI
 --
 
 ```
-Known Issues and Workaround
+Known Issues and Workaround: -weak_framework
 Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729)
 ```
 
@@ -786,172 +953,6 @@ MyUnitTests.defaultTestSuite().run() // in playground
 
 ---
 
-## Outline
-
-.grey[
-### Develop only at Framework
-### Verify the Framework
-]
-
-### Code Injection to minimize rebuild
-
----
-
-## Code Injection
-
-* LLDB and Breakpoints
-
-* Modify control flow without rebuild
-
----
-
-## Code Injection Example - Login
-
-.vertical-center.center[
-	<img src="assets/images/lldb-breakpoint1.png" width="650"/>
-]
-
----
-
-## Code Injection Example - Login
-
-.vertical-center.center[
-	<img src="assets/images/lldb-breakpoint2.png" width="800"/>
-]
-
----
-
-## Code Injection - REPL
-
-* LLDB + REPL
-
-* Read-Eval-Print-Loop (REPL)
-
-* Access public functions and global variables
-
-* Inject new functions
-
----
-
-## Code Injection Example - Fibonacci
-
-.vertical-center.center[
-	<img src="assets/images/repl-example1.png" width="800"/>
-]
-
----
-
-## Code Injection Example - Fibonacci
-
-* Type `repl` to enter
-
-.center[
-	<img src="assets/images/repl-enter.png" width="800"/>
-]
-
----
-
-## Code Injection Example - Fibonacci
-
-* Inject new function
-
-.center[
-	<img src="assets/images/repl-injection.png" width="500"/>
-]
-
----
-
-## Code Injection Example - Fibonacci
-
-* Call the function and verify
-
-.center[
-	<img src="assets/images/repl-call-function.png" width="700"/>
-]
-
----
-
-## Code Injection Example - Fibonacci
-
-* Prefix `:` to run LLDB command
-
-.center[
-	<img src="assets/images/repl-p.png" width="600"/>
-]
-
----
-
-## Code Injection Example - Fibonacci
-
-* Type single colon to return back to LLDB 
-
-.center[
-	<img src="assets/images/repl-return.png" width="100"/>
-]
-
----
-
-## Code Injection Example - Fibonacci
-
-* Modify variable by calling the injected function
-
-.center[
-	<img src="assets/images/repl-breakpoint-call-injected-function.png" width="810"/>
-]
-
----
-
-## Code Injection Example - API ViewModel
-
-* In the code todo
-* Implement a view model to fetch API result
-
-.center[
-    <img src="assets/images/lldb-ex3-breakpoint.png" width="800"/>
-]
-
----
-
-## Code Injection Example - API ViewModel
-
-* Type `e` in LLDB to enter multi-line expressions
-
-.center[
-    <img src="assets/images/lldb-ex3-e.png" width="800"/>
-]
-
----
-
-## Code Injection Example - API ViewModel
-
-* Inject ViewModel and API code
-
-.center[
-    <img src="assets/images/lldb-ex3-inject-vm.png" width="800"/>
-]
-
----
-
-## Code Injection Example - API ViewModel
-
-* Call the injected function
-
-.center[
-    <img src="assets/images/lldb-ex3-call-vm.png" width="800"/>
-]
-
----
-
-## Code Injection Example - API ViewModel
-
-* Inspect the result
-
-.center[
-    <img src="assets/images/lldb-ex3-v.png" width="800"/>
-]
-
----
-
 class: blank
 
 .vertical-center.center[
@@ -960,8 +961,13 @@ class: blank
 
 ---
 
-## Happy Coding
+## Thank You
 
-.vertical-center.center[
-# Thank you
-]
+* The slides is made by Markdown powered by [remark](https://github.com/gnab/remark)
+
+* The markdown and sample code of the slides could be found [here](https://github.com/eJamesLin/iPlayground2019)
+
+.center[<img src="assets/profile/SlidesQRCode.svg" width="200"/>]
+
+* Happy Coding and Thank You
+
