@@ -582,6 +582,16 @@ not the `Analytics`, nor the implementation detail GA.
 
 ---
 
+## Framework + Live View
+
+### SwiftUI Canvas Preview
+
+.grey[
+### Playground
+]
+
+---
+
 ## SwiftUI Canvas Preview Advantage
 --
 
@@ -813,7 +823,19 @@ Framework Scheme
 
 ---
 
+## Framework + Live View
+
+.grey[
+### SwiftUI Canvas Preview
+]
+
+### Playground
+
+---
+
 ## Playground + Framework
+
+Currently Playground is more stable than SwiftUI canvas preview...
 
 .center[
 	<img src="assets/images/TodayPlayground.gif" width="800"/>
