@@ -802,27 +802,26 @@ MyUnitTests.defaultTestSuite().run() // in playground
 * LLDB and Breakpoints
 
 * Modify control flow without rebuild
---
 
-.center[
-	<img src="assets/images/lldb-breakpoint1.png" width="550"/>
+---
+
+## Code Injection Example - Login
+
+.vertical-center.center[
+	<img src="assets/images/lldb-breakpoint1.png" width="650"/>
 ]
 
 ---
 
-## Code Injection
+## Code Injection Example - Login
 
-* LLDB and Breakpoints
-
-* Modify control flow without rebuild
-
-.center[
+.vertical-center.center[
 	<img src="assets/images/lldb-breakpoint2.png" width="800"/>
 ]
 
 ---
 
-## Code Injection
+## Code Injection - REPL
 
 * LLDB + REPL
 
@@ -834,17 +833,15 @@ MyUnitTests.defaultTestSuite().run() // in playground
 
 ---
 
-## Code Injection
+## Code Injection Example - Fibonacci
 
-* Example
-
-.center[
+.vertical-center.center[
 	<img src="assets/images/repl-example1.png" width="800"/>
 ]
 
 ---
 
-## Code Injection
+## Code Injection Example - Fibonacci
 
 * Type `repl` to enter
 
@@ -852,7 +849,9 @@ MyUnitTests.defaultTestSuite().run() // in playground
 	<img src="assets/images/repl-enter.png" width="800"/>
 ]
 
---
+---
+
+## Code Injection Example - Fibonacci
 
 * Inject new function
 
@@ -862,7 +861,7 @@ MyUnitTests.defaultTestSuite().run() // in playground
 
 ---
 
-## Code Injection
+## Code Injection Example - Fibonacci
 
 * Call the function and verify
 
@@ -872,7 +871,7 @@ MyUnitTests.defaultTestSuite().run() // in playground
 
 ---
 
-## Code Injection
+## Code Injection Example - Fibonacci
 
 * Prefix `:` to run LLDB command
 
@@ -882,7 +881,7 @@ MyUnitTests.defaultTestSuite().run() // in playground
 
 ---
 
-## Code Injection
+## Code Injection Example - Fibonacci
 
 * Type single colon to return back to LLDB 
 
@@ -892,7 +891,7 @@ MyUnitTests.defaultTestSuite().run() // in playground
 
 ---
 
-## Code Injection
+## Code Injection Example - Fibonacci
 
 * Modify variable by calling the injected function
 
