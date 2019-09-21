@@ -62,6 +62,11 @@ class: blank
 ## Outline
 
 ### LLDB Code Injection
+
+???
+
+Minimize the number of rebuild
+
 --
 
 ### Develop only at Framework
@@ -142,7 +147,7 @@ class: blank
 * Inject new function
 
 .center[
-    <img src="assets/images/repl-injection.png" width="500"/>
+    <img src="assets/images/repl-injection.png" width="700"/>
 ]
 
 ---
@@ -172,7 +177,7 @@ class: blank
 * Type single colon to return back to LLDB 
 
 .center[
-    <img src="assets/images/repl-return.png" width="100"/>
+    <img src="assets/images/repl-return.png" width="250"/>
 ]
 
 ---
@@ -190,7 +195,7 @@ class: blank
 ## Code Injection Example - API ViewModel
 
 * In the code todo
-* Implement a view model to fetch API result
+* Implement a view model to download API json
 
 .center[
     <img src="assets/images/lldb-ex3-breakpoint.png" width="800"/>
@@ -214,6 +219,36 @@ class: blank
 
 .center[
     <img src="assets/images/lldb-ex3-inject-vm.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Json URL
+
+.center[
+    <img src="assets/images/lldb-ex3-inject-vm1.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Download 
+
+.center[
+    <img src="assets/images/lldb-ex3-inject-vm2.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Runloop handling at LLDB
+
+.center[
+    <img src="assets/images/lldb-ex3-inject-vm3.png" width="800"/>
 ]
 
 ---
