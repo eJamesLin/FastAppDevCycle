@@ -901,6 +901,65 @@ MyUnitTests.defaultTestSuite().run() // in playground
 
 ---
 
+## Code Injection Example - API ViewModel
+
+* In the code todo
+* Implement a view model to fetch API result
+
+.center[
+    <img src="assets/images/lldb-ex3-breakpoint.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Type `e` in LLDB to enter multi-line expressions
+
+.center[
+    <img src="assets/images/lldb-ex3-e.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Inject ViewModel and API code
+
+.center[
+    <img src="assets/images/lldb-ex3-inject-vm.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Call the injected function
+
+.center[
+    <img src="assets/images/lldb-ex3-call-vm.png" width="800"/>
+]
+
+---
+
+## Code Injection Example - API ViewModel
+
+* Inspect the result
+
+.center[
+    <img src="assets/images/lldb-ex3-v.png" width="800"/>
+]
+
+---
+
+class: blank
+
+.vertical-center.center[
+## Avoid Build-and-Run Whole App
+]
+
+---
+
 ## Happy Coding
 
 .vertical-center.center[

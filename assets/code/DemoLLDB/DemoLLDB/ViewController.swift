@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - Example 1
 public class ViewController: UIViewController {
 
     var isLoggedIn = false
@@ -33,12 +34,18 @@ public class ViewController: UIViewController {
     }
 
     var fibonacci: [Int] = []
-
     @IBAction func didTapFibonacci(_ sender: Any) {
         fibonacci = FibonacciManager.shared.fibonacci()
         print(fibonacci)
     }
+
+    var sessions: [SessionInfo]?
+    @IBAction func didTapDownload(_ sender: Any) {
+        //TODO: fetch session titles with view model
+    }
 }
+
+// MARK: - Example 2
 
 public class FibonacciManager {
     public static let shared = FibonacciManager()
@@ -55,3 +62,38 @@ extension FibonacciManager {
     }
 }
  */
+
+
+// MARK: - Example 3
+
+struct SessionResponse: Codable {
+    let sessions: [SessionInfo]
+}
+
+struct SessionInfo: Codable {
+    let title: String
+    let presenter: String
+}
+
+// Execute at LLDB
+// e $ViewModel().download { self.sessions = $0 }
+// v self.sessions
+
+// Add at LLDB
+/*
+import Foundation
+class $ViewModel {
+    let url = URL(string: "https://raw.githubusercontent.com/iplayground/SessionData/master/sessions.json")!
+    func download(completion: @escaping ([SessionInfo]) -> Void) {
+        let rl = CFRunLoopGetCurrent() // async task in lldb, remove later
+        URLSession.shared.dataTask(
+            with: url,
+            completionHandler: { data, response, error in
+                let response = try! JSONDecoder().decode(SessionResponse.self, from: data!)
+                completion(response.sessions)
+                CFRunLoopStop(rl)
+        }).resume()
+        CFRunLoopRun()
+    }
+}
+*/
