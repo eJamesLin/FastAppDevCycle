@@ -815,7 +815,7 @@ Main Scheme
 
 --
 
-Framework Scheme
+Framework Scheme - Solution
 
 .center[
 <img src="assets/images/SwiftUI-preview-issue-framework.png" width="630"/>
