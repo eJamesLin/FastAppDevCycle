@@ -309,6 +309,14 @@ App build time > 10 mins
 	<img src="assets/images/BuildTimeWholeApp.png" width="450"/>
 ]
 
+???
+
+MacBook Pro (15-inch, 2017)
+
+3.1 GHz Intel Core i7
+
+16 GB 2133 MHz LPDDR3
+
 --
 
 ### Partitioned Framework Target
@@ -588,6 +596,8 @@ not the `Analytics`, nor the implementation detail GA.
 
 .right-column[
 * Can also preview UIViewController / UIView
+
+* Even if the minimum target is iOS 12 and below
 ]
 
 ---
