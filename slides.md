@@ -294,7 +294,7 @@ Minimize the number of rebuild
 App build time > 10 mins
 --
 
-### Can't tolerate LONG BUILD TME?
+### Can't tolerate LONG BUILD TIME?
 --
 
 ### Let's solve it !!!
