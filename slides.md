@@ -295,9 +295,12 @@ App build time > 10 mins
 --
 
 ### Can't tolerate LONG BUILD TIME?
---
 
 ### Let's solve it !!!
+
+.center[
+	<img src="assets/images/survey.jpg" width="600"/>
+]
 
 ---
 
